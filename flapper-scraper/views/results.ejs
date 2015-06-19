@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/javascripts/appScraper.js"></script>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %> page</p>
+    <ul>
+    	<% results.forEach(function(resu){ %>
+    		<li><%= resu.name %> - <%= resu.description %></li>
+    	<%	}); %>
+    </ul>
+  </body>
+</html>
